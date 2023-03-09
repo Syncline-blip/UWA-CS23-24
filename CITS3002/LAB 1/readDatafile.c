@@ -4,27 +4,11 @@
   
 int main()
 {
-    FILE *fptr;
-  
-    char c;
-  
+   unsigned char buffer[1024];
+    FILE *ptr;
 
-    // Open file
-    fptr = fopen("Q1.datafile", "rb");
-    if (fptr == NULL)
-    {
-        printf("Cannot open file \n");
-        exit(0);
-    }
-  
-    // Read contents from file
-    c = fgetc(fptr);
-    while (c != EOF)
-    {
-        printf ("%c", c);
-        c = fgetc(fptr);
-    }
-  
-    fclose(fptr);
-    return 0;
+    ptr = fopen("Q1.datafile","rb");  // r for read, b for binary
+    fread(buffer,sizeof(buffer),1,ptr); // read 10 bytes to our buffer
+    for(int i = -50; i<50; i++)
+    printf("%i\n", buffer[i]); // prints a series of bytes
 }

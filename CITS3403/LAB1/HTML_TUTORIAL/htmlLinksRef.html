@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Headings Tutorial</title>
-        
+        <!-- Custom logo of the tab -->
+        <link rel="icon" type="image/png" href="fortnitekanye.png">
     </head>
 
     <body>
@@ -19,5 +20,46 @@
 
         <h1>Using an image that does not exist (again does not work, the name or file itself is wrong)</h1>
         <img src="https://i.pinimg.com/originals/fa/43/f9/fa43f93b1d58339e4c51c491b58e509f.jpq" alt="Myoui Mina">
+        <br>
+        <a href="https://www.youtube.com/watch?v=4a4zu5t83yY" target="_blank">Redbone in a new tab (using _blank)</a>
+        <br>
+        <a href="https://i.pinimg.com/originals/fa/43/f9/fa43f93b1d58339e4c51c491b58e509f.jpg" target="_parent">Kpop idol open in parent frame</a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=4a4zu5t83yY" target="_self">Opens in the same window/tab as it was clicked (_self)</a>
+        <br>
+        <a href="https://i.pinimg.com/originals/fa/43/f9/fa43f93b1d58339e4c51c491b58e509f.jpg" target="_top">Kpop idol in new window (_top)</a>
+
+        <h2>Absolute URLs</h2>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+
+        <h2>Relative URLs</h2>
+        <a href="fortnitekanye.png">HTML Images</a>
+        <!-- Will not work, need to ask why?  -->
+        <a href="/LAB1/HTML_TUTORIAL/fortnitekanye.png">CSS Tutorial</a>
+        
+        <br>
+        <a href="https://www.youtube.com/watch?v=QZEDdXU80DI">
+            <img src="fortnitekanye.png" alt="Fortnte Kanye" style="width: 42px; height: 42px;">
+        </a>
+        <br>
+
+        <!-- Link to an email, opens up computer's default email UI -->
+        <a href="mailto:john.lumagbas@proav.com.au">SEND EMAIL</a>
+        <br>
+        <!-- Button click link (Javascript logic)-->
+        <button onclick="document.location='https://i.pinimg.com/originals/fa/43/f9/fa43f93b1d58339e4c51c491b58e509f.jpg'">HTML Tutorial</button>
+        <hr>
+        <h2>Links to a bunch of Tutorial:</h2>
+        <p>
+            <!-- Why doesnt this work?? -->
+            <a href="HTML_TUTORIAL/htmlColors.html"> Color usage</a>
+        </p>
+        <br>
+        <H2> FLOAT RIGHT OR LEFT FOR IMAGES</H2>
+        <p><img src="fortnitekanye.png" alt="KANYE ON THE RIGHT"style="float:right;width:42px;height:42px;">RIGHT</p>
+        <p><img src="fortnitekanye.png" alt="KANYE ON THE LEFT"style="float:left;width:42px;height:42px;">LEFT</p>
+        
     </body>
+
 </html>

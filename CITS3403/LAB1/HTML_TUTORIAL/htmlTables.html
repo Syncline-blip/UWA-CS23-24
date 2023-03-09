@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        
+        table th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        }   
+
+        /* CSS Style for the header */
+        th {
+            background-color: #96D4D4;
+        }
+
+        /* Table data CSS Styles */
+        td {
+            background-color: beige;
+            border-color: #96D4D4;
+            border-style: dotted;
+            /* dotted     
+            dashed     
+            solid     
+            double     
+            groove     
+            ridge     
+            inset     
+            outset     
+            none     
+            hidden    */
+        }
+    </style>
+    <title>Using Tables in HTML</title>
+</head>
+<body>
+    <h1>Simple Table: </h1>
+    <table>
+        <tr> <!-- Table Rows-->
+          <th>Company</th>
+          <th>Contact</th> <!-- Table Headers-->
+          <th>Country</th>
+        </tr>
+        <tr> <!-- This first tr will be the first to be put in rows (topr row)-->
+          <td>Alfreds Futterkiste</td> <!-- Table Data, goes under <th>-->
+          <td>Maria Anders</td> 
+          <td>Germany</td>
+        </tr>
+        <tr> 
+          <td>Centro comercial Moctezuma</td> <!-- Goes under Company-->
+          <td>Francisco Chang</td> <!-- Goes under Contact-->
+          <td>Mexico</td> <!-- Goes under Country -->
+        </tr>
+      </table>
+</body>
+</html>
