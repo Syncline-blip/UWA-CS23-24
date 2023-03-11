@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+
+    <script>
+        function submitForm() {
+            const form = document.getElementById('data-form');
+            alert(form.elements['a'].value);
+
+        }
+    </script>
 </head>
 <body>
     <h2>Basic HTML Form</h2>
@@ -107,9 +115,9 @@
           <option value="Safari">
         </datalist>
       </form>
-      hr
+    <hr>
     <h2>Output - Showing results</h2>
-    <form action="/action_page.php"
+    <form onsubmit="submitForm();" id="data-form"
         oninput="x.value=parseInt(a.value)+parseInt(b.value)"> <!-- JS Calculation-->
         0
         <input type="range"  id="a" name="a" value="50">
