@@ -1,0 +1,15 @@
+1.
+     What do you observe and why?
+        Initially, there are a lot of numbers which I don't understand.
+        However, after implementing the function properly I can observe properly what is going on.
+        Essentially, the value of each bit changes when we change or replace particular values within the bit
+        ie:  
+        the original value of the first entry is -50 0xffffffce but when swapped, produces: 
+        -822083585      0xceffffff
+    Does program od help?
+        I am not sure how this helps, will need to clarify with the lab.
+    What does my observations have for computer networking?
+        From my understanding, if a bit sent and becomes altered, corrupted or changed, will completely change
+        the value of the data that is being sent, thus giving the wrong data to the reciever. There will need to
+        be some sort of way to verify and confirm that the data requested is the data that is recieved
+    
