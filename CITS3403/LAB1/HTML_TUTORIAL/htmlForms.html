@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+    <script>
+        function submitForm() {
+            const form = document.getElementById('data-form');
+            alert(form.elements['a'].value);
+
+        }
+    </script>
+</head>
+<body>
+    <h2>Basic HTML Form</h2>
+    <form>
+        <!-- Notice the use of the <label> element in the example above.
+
+        The <label> tag defines a label for many form elements.
+        
+        The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+        
+        The <label> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+        
+        The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+            -->
+            
+        <!-- Label of form -->
+        <label for="fname">First Name</label><br> 
+        <!-- Text bar of input -->
+        <input type="text" name="fname" id="fname"><br>
+        <!-- Type defines what kind of input is being took by form
+        submit will turn into a button which submits data of form-->
+        <input type="submit" value="Submit"> 
+        <!-- If name is not specified then submit will not get value of name -->
+        
+    </form>
+    <hr>
+    <h2>Radio Button Form</h2>
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+    <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    <h2> Checkbox form</h2>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2> Using the action attribute</h2>
+    <!-- The action attribute determines what to do when the form is submitted -->
+    <form action="htmlQuotations.html" target="_blank" method="get"> <!-- You can specify where the action will appear, much like a link-->
+        <fieldset> <!-- Groups related data in a form-->
+            <legend>Peronsal Info</legend>  <!-- Acts as a caption -->
+            <label for="fname">First name:</label><br> <!-- This is the form label-->
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button> <!-- Creats a prompt-->
+        </fieldset>
+        
+      </form>
+
+    <!-- Notes on GET:
+        ALSO WHAT THE FUCK DOES THIS DO
+    Appends the form data to the URL, in name/value pairs
+    NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+    The length of a URL is limited (2048 characters)
+    Useful for form submissions where a user wants to bookmark the result
+    GET is good for non-secure data, like query strings in Google
+    Notes on POST:
+
+    Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+    POST has no size limitations, and can be used to send large amounts of data.
+    Form submissions with POST cannot be bookmarked -->
+    <hr>
+    <h2>Dropdown List</h2>
+    <form>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="4" multiple> <!-- using size attribute can specify how many to show at once
+                                               using multiple attribute allows multiple selection-->
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat" selected>Fiat</option> <!-- Adding selected attributes define a preselect-->
+            <option value="audi">Audi</option>
+        </select>
+    </form>
+    <hr>
+    <h2>Data Lists</h2> <!-- Glorified input box that has pre-determined entries you can search for-->
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+    <hr>
+    <h2>Output - Showing results</h2>
+    <form onsubmit="submitForm();" id="data-form"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)"> <!-- JS Calculation-->
+        0
+        <input type="range"  id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <!-- To see more about types, I cannot be fucked anymore https://www.w3schools.com/html/html_form_input_types.asp -->
+
+    <!-- https://www.w3schools.com/html/html_form_attributes.asp -->
+    <!-- https://www.w3schools.com/html/html_form_attributes.asp -->
+</body>
+</html>
