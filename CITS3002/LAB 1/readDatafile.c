@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h> // For exit()
 #include <fcntl.h>
+#include <stdint.h>
 int main()
 {
     // Simple function to read Q1.DataFile
