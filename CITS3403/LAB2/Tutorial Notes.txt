@@ -1,0 +1,16 @@
+Note on Internal Styles:
+    defined in <style>, inside the <head> section
+
+
+Note on Inline Styles:
+    defined within stlye attribute of a single element
+
+Note on External Styles:
+    defined in a different css file
+    
+
+Cascading Order (Numbered by priority):
+1. Inline style (inside an element)
+2. External and internal style sheets (in head section)
+3. Browser Default
+

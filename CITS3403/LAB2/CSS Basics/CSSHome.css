@@ -1,0 +1,50 @@
+/* SAMPLE CSS SCRIPT */
+
+/* Applies to all elements with body, h1, p */
+/* selector {property:value} */
+body {
+    background-color: lightblue;
+}
+  
+h1 {
+    color: white;
+    /* colors can be defined also by their RGB, HEX,HSL values
+     rgb(255, 99, 71)
+     #ff6347
+    hsl(9, 100%, 64%)
+    rgba(255, 99, 71, 0.5)
+    hsla(9, 100%, 64%, 0.5) */
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px; /*No space between 20 and px*/
+}
+/* Traditional CSS */
+/* body{
+    background-image: url("vivid.avif");
+    background-repeat: repeat-x; Repeates backgroound image horzonally/vertically or non at all 
+    background-position: right top; Sets position of the background
+    background-attachment: scroll; Sets if background image should scroll or be fixed i.e will not scroll with the rest of the page
+
+} */
+
+/* Shorthand property, to lessen the code */
+body {
+    background: lightblue url("vivid.avif") no-repeat right top scroll;
+    /* Properties here are: background-color, background-image, background-repeat, background-position */
+}
+
+/* This will apply to all elements on the page */
+/* * {
+    background-color: aliceblue;
+} */
+
+/* 
+
+    Note:
+        - h1 = Grouping Selector
+        - #id = Id Selector
+        - .class = Class selector
+*/
